@@ -4,10 +4,8 @@ Flc is a command line interface for Adobe Flash Professional. It is usefull when
 
 ## How to install
 
-Npm package is comming soon. For now you can install it directly from GitHub:
-
 ```shell
-npm install -g alexeiskachykhin/flc
+npm install -g flc
 ```
 
 ## How to use

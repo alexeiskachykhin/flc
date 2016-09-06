@@ -21,7 +21,7 @@ flc --interactiveCompiler "c:\Program Files\Adobe\Adobe Flash CC 2014\Flash.exe"
     --includePattern="*.fla"
 ```
 
-You help to get a list of all available options
+You help to get a list of all available options:
 
 ```shell
 flc --help

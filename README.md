@@ -6,7 +6,7 @@ Flc is a command line interface for Adobe Flash Professional. It is usefull when
 
 Npm package is comming soon. For now you can install it directly from GitHub:
 
-```
+```shell
 npm install -g alexeiskachykhin/flc
 ```
 
@@ -14,7 +14,7 @@ npm install -g alexeiskachykhin/flc
 
 Following command will build FLAs from "c:\fla" and put SWFs to "c:\swf":
 
-```
+```shell
 flc --interactiveCompiler "c:\Program Files\Adobe\Adobe Flash CC 2014\Flash.exe" \
     --inputDirectory "c:\fla" \ 
     --outputDirectory "c:\swf" \
@@ -23,7 +23,7 @@ flc --interactiveCompiler "c:\Program Files\Adobe\Adobe Flash CC 2014\Flash.exe"
 
 You help to get a list of all available options
 
-```
+```shell
 flc --help
 ```
 
@@ -38,7 +38,7 @@ It might be challenging because certain Continious Integration servers execute t
  
 Then RDP into machine that executes __flc__ and run following command:
 
-```
+```shell
 psexec -i 0 cmd
 ```
 

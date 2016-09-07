@@ -3,7 +3,7 @@
 const GrowingFile = require('growing-file');
 
 
-class ProxyTextThoughFileOperation {
+class ProxyTextThroughFileOperation {
 
     constructor(inputFile, outputStream) {
         this._inputFile = inputFile;
@@ -24,4 +24,4 @@ class ProxyTextThoughFileOperation {
 }
 
 
-module.exports = exports = ProxyTextThoughFileOperation;
+module.exports = exports = ProxyTextThroughFileOperation;

@@ -3,7 +3,7 @@
 const readline = require('readline');
 const path = require('path');
 
-const ProxyTextThoughFileOperation = require('./operations/ProxyTextThoughFileOperation');
+const ProxyTextThroughFileOperation = require('./operations/ProxyTextThroughFileOperation');
 const TruncateFileOperation = require('./operations/TruncateFileOperation');
 const ProcessExternalCommandsOperation = require('./operations/ProcessExternalCommandsOperation');
 const ExecuteInteractiveCompilerOperation = require('./operations/ExecuteInteractiveCompilerOperation');
@@ -40,9 +40,9 @@ class FlaCompiler {
     compile() {
         const scenario = [
             new TruncateFileOperation(this._internalConfig.logFile),
-            new ProxyTextThoughFileOperation(this._internalConfig.logFile, process.stdout),
+            new ProxyTextThroughFileOperation(this._internalConfig.logFile, process.stdout),
             new TruncateFileOperation(this._internalConfig.errorFile),
-            new ProxyTextThoughFileOperation(this._internalConfig.errorFile, process.stderr),
+            new ProxyTextThroughFileOperation(this._internalConfig.errorFile, process.stderr),
             new TruncateFileOperation(this._internalConfig.commandFile),
             new ProcessExternalCommandsOperation(this._internalConfig.commandFile),
             new ExecuteInteractiveCompilerOperation(this._internalConfig)

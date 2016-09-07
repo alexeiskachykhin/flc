@@ -6,6 +6,9 @@
   "bin": {
     "flc": "./bin/flc.js"
   },
+  "engines": {
+    "node": ">=4.2.0"
+  },
   "author": "Alexei Skachykhin <alexei.skachykhin@live.com>",
   "keywords": [
     "flash",

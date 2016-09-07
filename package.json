@@ -1,13 +1,18 @@
 {
   "name": "flc",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Command line interface for Adobe Flash Professional",
   "main": "./cli/Host.js",
   "bin": {
     "flc": "./bin/flc.js"
   },
   "author": "Alexei Skachykhin <alexei.skachykhin@live.com>",
-  "keywords": ["flash", "fla", "compiler", "cli"],
+  "keywords": [
+    "flash",
+    "fla",
+    "compiler",
+    "cli"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",

@@ -34,7 +34,7 @@ class ProcessExternalCommandsOperation {
             while ((commandBuffer = lineStream.read()) !== null) {
                 const commandString = commandBuffer.toString();
 
-                console.log('Build daemon received the command: ' + commandString);
+                console.log('FLA compiler received the command: ' + commandString);
 
                 callback(commandString);
             }

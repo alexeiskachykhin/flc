@@ -13,10 +13,10 @@ npm install -g flc
 Following command will build FLAs from "c:\fla" and put SWFs to "c:\swf":
 
 ```shell
-flc --interactiveCompiler "c:\Program Files\Adobe\Adobe Flash CC 2014\Flash.exe" \
-    --inputDirectory "c:\fla" \ 
-    --outputDirectory "c:\swf" \
-    --includePattern="*.fla"
+flc --interactive-compiler "c:\Program Files\Adobe\Adobe Flash CC 2014\Flash.exe" \
+    --input-directory "c:\fla" \ 
+    --output-directory "c:\swf" \
+    --include-pattern "*.fla"
 ```
 
 You help to get a list of all available options:
@@ -31,7 +31,7 @@ As __flc__ drives UI of Adobe Flash Professional it is really important that no 
 
 It might be challenging because certain Continious Integration servers execute tasks under Session 0 Desktop, which means that UI of Adobe Flash Professional is not visible by default so you can't see whats going in with it in the middle of compilation process. In order to see it, make sure that:
 
-1. __flc__ is being run with `--debug=true`
+1. __flc__ is being run with `--debug` flag
 2. you have __psexec__ installed
  
 Then RDP into machine that executes __flc__ and run following command:

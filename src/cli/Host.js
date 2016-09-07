@@ -1,26 +1,25 @@
 'use strict';
 
+const program = require('commander');
 const FlaCompiler = require('./FlaCompiler');
 
 
-const commandLineOptions = require('node-getopt').create([
-    ['', 'interactiveCompiler=ARG', 'full path to Flash.exe'],
-    ['', 'inputDirectory=ARG', 'full path to input directory'],
-    ['', 'outputDirectory=ARG', 'full path to output directory'],
-    ['', 'debug[=true|false]', 'activate session 0 debugging mode'],
-    ['', 'includePattern[=PATTERN]', 'list of files to include in a build, all files will be included if ommited'],
-    ['h', 'help', 'display this help']
-])
-.bindHelp()
-.parseSystem();
+program
+    .version(require('../../package.json').version)
+    .option('--interactive-compiler <path>', 'full path to Flash.exe')
+    .option('--input-directory <path>', 'full path to input directory that contains FLA files')
+    .option('--output-directory <path>', 'full path to input directory to put build artifacts into')
+    .option('--include-pattern [pattern]', 'list of files to include in a build, default is *.fla', '*.fla')
+    .option('--debug [value]', 'activate session 0 debugging mode', (value) => Boolean(parseInt(value)), false)
+    .parse(process.argv);
 
 
 const compilerConfig = {
-    interactiveCompiler: commandLineOptions.options.interactiveCompiler,
-    inputDirectory: commandLineOptions.options.inputDirectory,
-    outputDirectory: commandLineOptions.options.outputDirectory,
-    debug: ((commandLineOptions.options.debug || 'false') === 'true'),
-    includePattern: (commandLineOptions.options.includePattern || '*.fla')
+    interactiveCompiler: program.interactiveCompiler,
+    inputDirectory: program.inputDirectory,
+    outputDirectory: program.outputDirectory,
+    includePattern: program.includePattern,
+    debug: program.debug
 };
 
 const compiler = new FlaCompiler(compilerConfig);

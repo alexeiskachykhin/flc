@@ -7,6 +7,7 @@
     "flc": "./bin/flc.js"
   },
   "author": "Alexei Skachykhin <alexei.skachykhin@live.com>",
+  "keywords": ["flash", "fla", "compiler", "cli"],
   "license": "MIT",
   "repository": {
     "type": "git",

@@ -1,4 +1,8 @@
-﻿# flc
+[![npm](https://img.shields.io/npm/v/flc.svg?maxAge=86400)](https://www.npmjs.com/package/flc)
+[![npm](https://img.shields.io/npm/dt/flc.svg?maxAge=86400)](https://www.npmjs.com/package/flc)
+[![David](https://img.shields.io/david/alexeiskachykhin/flc.svg?maxAge=86400)](https://david-dm.org/alexeiskachykhin/flc)
+
+# flc
 
 Flc is a command line interface for Adobe Flash Professional. It is usefull when you need to drive Adobe Flash Professional on Continious Integration server. Under the hood it supplies set of __jsfl__ files to Adobe Flash Professional to execute. Flc is capable of writing status information to stdout and shutdowns with proper exit code which is important for automation scenarios.
 

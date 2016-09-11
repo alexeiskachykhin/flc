@@ -1,0 +1,4 @@
+﻿#!/bin/sh
+
+FLC_DIR="`dirname \"$0\"`"
+node "$FLC_DIR/flc.js" "$@"

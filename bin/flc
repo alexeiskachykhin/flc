@@ -1,4 +1,4 @@
-﻿#!/bin/sh
+﻿#!/usr/bin/env node
 
-FLC_DIR="`dirname \"$0\"`"
-node "$FLC_DIR/flc.js" "$@"
+'use strict';
+require('../src/cli/Host.js');

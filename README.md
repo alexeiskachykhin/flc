@@ -1,7 +1,7 @@
-[![npm](https://img.shields.io/npm/v/flc.svg?maxAge=86400)](https://www.npmjs.com/package/flc)
-[![npm](https://img.shields.io/npm/dt/flc.svg?maxAge=86400)](https://www.npmjs.com/package/flc)
-[![license](https://img.shields.io/github/license/alexeiskachykhin/flc.svg?maxAge=86400)](https://github.com/alexeiskachykhin/flc/blob/master/LICENSE)
-[![David](https://img.shields.io/david/alexeiskachykhin/flc.svg?maxAge=86400)](https://david-dm.org/alexeiskachykhin/flc)
+[![npm](https://img.shields.io/npm/v/flc.svg)](https://www.npmjs.com/package/flc)
+[![npm](https://img.shields.io/npm/dt/flc.svg)](https://www.npmjs.com/package/flc)
+[![license](https://img.shields.io/github/license/alexeiskachykhin/flc.svg)](https://github.com/alexeiskachykhin/flc/blob/master/LICENSE)
+[![David](https://img.shields.io/david/alexeiskachykhin/flc.svg)](https://david-dm.org/alexeiskachykhin/flc)
 
 # flc
 

@@ -3,6 +3,9 @@
 function importScript(filePath) {
     var scriptPath = FLfile.uriToPlatformPath(fl.scriptURI);
     var scriptPathEnd = scriptPath.lastIndexOf('\\');
+    if (scriptPathEnd === -1) {
+        scriptPathEnd = scriptPath.lastIndexOf('/');
+    }
     scriptPath = scriptPath.slice(0, scriptPathEnd + 1);
     fl.runScript(FLfile.platformPathToURI(scriptPath + filePath));
 }
@@ -22,7 +25,7 @@ importScript('../tasks/CompileMultipleFlaToSwfTask.jsfl');
 var environment = new Environment(fl.scriptURI);
 
 var config = JsonSerializer.deserialize(
-    environment.scriptDirectoryUri + '/' + 
+    environment.scriptDirectoryUri + '/' +
     Path.basename(environment.scriptName, '.jsfl') + '.Parameters.json');
 
 

@@ -4,7 +4,9 @@ var Path = new function () {
 
     var self = this;
 
-    var PLATFORM_SPECIFIC_SEPARATOR = '\\';
+    var PLATFORM_SPECIFIC_SEPARATOR = (FLfile.uriToPlatformPath(fl.scriptURI).indexOf('\\') !== -1)
+        ? '\\'
+        : '/';
 
     var possibleSeparators = [
         '\\',
@@ -44,7 +46,7 @@ var Path = new function () {
         var normalizedPathParts = normalizedPath.split(PLATFORM_SPECIFIC_SEPARATOR);
 
         var basename = normalizedPathParts[normalizedPathParts.length - 1];
-        
+
         if (!extension) {
             return basename;
         }

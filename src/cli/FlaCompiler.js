@@ -14,8 +14,8 @@ class FlaCompiler {
     constructor(config) {
         this._internalConfig = {
             interactiveCompiler: config.interactiveCompiler,
-            inputDirectory: config.inputDirectory,
-            outputDirectory: config.outputDirectory,
+            inputDirectory: path.resolve(config.inputDirectory),
+            outputDirectory: path.resolve(config.outputDirectory),
             includePattern: config.includePattern,
             debug: config.debug,
 

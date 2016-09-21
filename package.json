@@ -22,7 +22,8 @@
   },
   "dependencies": {
     "byline": "^5.0.0",
+    "commander": "^2.9.0",
     "growing-file": "^0.1.3",
-    "commander": "^2.9.0"
+    "mkdirp": "^0.5.1"
   }
 }

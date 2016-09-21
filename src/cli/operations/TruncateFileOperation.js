@@ -1,6 +1,8 @@
 'use strict';
 
 const fs = require('fs');
+const path = require('path');
+const mkdirp = require('mkdirp');
 
 
 class TruncateFileOperation {
@@ -11,9 +13,8 @@ class TruncateFileOperation {
 
 
     execute() {
-        if (!fs.existsSync(this._file)) {
-            return;
-        }
+        const directoryPath = path.dirname(this._file);
+        mkdirp.sync(directoryPath);
 
         const fileDescriptor = fs.openSync(this._file, 'w+');
         fs.closeSync(fileDescriptor);

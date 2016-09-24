@@ -34,7 +34,7 @@ flc --help
 
 * Works on __Windows__ and __OSX__
 * Doesn't requre administrative priveledges
-* Tested on __Node 4.2.0+__, likely work on previous version as well
+* Tested on __Node 4.2.0+__, likely work on previous versions as well
 * Tested on __Adobe Flash Professional 2014+__
 
 ## Continious Integration

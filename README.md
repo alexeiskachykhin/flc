@@ -52,4 +52,4 @@ Then RDP into machine that executes __flc__ and run following command:
 psexec -i 0 cmd
 ```
 
-Once it is executed you will see a message from [Interactive Session Detection Service](https://blogs.msdn.microsoft.com/patricka/2010/04/27/what-is-interactive-services-detection-and-why-is-it-blinking-at-me/) that allows to transition graphically into Session 0 Desktop and see whats goint on.
+Once it is executed you will see a message from [Interactive Session Detection Service](https://blogs.msdn.microsoft.com/patricka/2010/04/27/what-is-interactive-services-detection-and-why-is-it-blinking-at-me/) that allows to transition graphically into Session 0 Desktop and see what's going on.

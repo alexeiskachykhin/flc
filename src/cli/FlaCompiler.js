@@ -19,7 +19,8 @@ class FlaCompiler {
             includePattern: config.includePattern,
             debug: config.debug,
 
-            buildPlan: path.join(__dirname, '..', 'automation', 'plans', 'AS3.jsfl'),
+            automationScriptsDirectory: path.join(__dirname, '..', 'automation'),
+            buildPlan: path.join('plans', 'AS3.jsfl'),
             logFile: path.join(config.outputDirectory, 'info.txt'),
             errorFile: path.join(config.outputDirectory, 'error.txt'),
             commandFile: path.join(config.outputDirectory, 'commands.txt')

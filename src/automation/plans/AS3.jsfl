@@ -22,8 +22,7 @@ importScript('../tasks/CompileMultipleFlaToSwfTask.jsfl');
 var environment = new Environment(fl.scriptURI);
 
 var config = JsonSerializer.deserialize(
-    environment.scriptDirectoryUri + '/' + 
-    Path.basename(environment.scriptName, '.jsfl') + '.Parameters.json');
+    environment.scriptDirectoryUri + '/../Parameters.json');
 
 
 var cliClient = new CliClient(

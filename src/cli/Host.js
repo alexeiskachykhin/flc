@@ -1,6 +1,7 @@
 'use strict';
 
 const program = require('commander');
+const path = require('path');
 const FlaCompiler = require('./FlaCompiler');
 
 
@@ -16,8 +17,8 @@ program
 
 const compilerConfig = {
     interactiveCompiler: program.interactiveCompiler,
-    inputDirectory: program.inputDirectory,
-    outputDirectory: program.outputDirectory,
+    inputDirectory: path.resolve(program.inputDirectory),
+    outputDirectory: path.resolve(program.outputDirectory),
     includePattern: program.includePattern,
     debug: program.debug
 };

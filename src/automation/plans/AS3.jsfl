@@ -3,6 +3,9 @@
 function importScript(filePath) {
     var scriptPath = FLfile.uriToPlatformPath(fl.scriptURI);
     var scriptPathEnd = scriptPath.lastIndexOf('\\');
+    if (scriptPathEnd === -1) {
+        scriptPathEnd = scriptPath.lastIndexOf('/');
+    }
     scriptPath = scriptPath.slice(0, scriptPathEnd + 1);
     fl.runScript(FLfile.platformPathToURI(scriptPath + filePath));
 }

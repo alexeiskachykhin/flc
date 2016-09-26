@@ -30,6 +30,13 @@ You help to get a list of all available options:
 flc --help
 ```
 
+## Compatibility
+
+* Works on __Windows__ and __OSX__
+* Doesn't requre administrative priveledges
+* Tested on __Node 4.2.0+__, likely work on previous versions as well
+* Tested on __Adobe Flash Professional 2014+__
+
 ## Continious Integration
 
 As __flc__ drives UI of Adobe Flash Professional it is really important that no unexpected dialogs show up in the middle of compilation process. __jsfl__ scripting capabilities are very limited so you should take responsibility to configure Adobe Flash Professional accordingly.
@@ -45,4 +52,4 @@ Then RDP into machine that executes __flc__ and run following command:
 psexec -i 0 cmd
 ```
 
-Once it is executed you will see a message from [Interactive Session Detection Service](https://blogs.msdn.microsoft.com/patricka/2010/04/27/what-is-interactive-services-detection-and-why-is-it-blinking-at-me/) that allows to transition graphically into Session 0 Desktop and see whats goint on.
+Once it is executed you will see a message from [Interactive Session Detection Service](https://blogs.msdn.microsoft.com/patricka/2010/04/27/what-is-interactive-services-detection-and-why-is-it-blinking-at-me/) that allows to transition graphically into Session 0 Desktop and see what's going on.

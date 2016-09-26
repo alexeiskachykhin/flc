@@ -5,7 +5,7 @@
 
 # flc
 
-Flc is a command line interface for Adobe Flash Professional. It is usefull when you need to drive Adobe Flash Professional on Continious Integration server. Under the hood it supplies set of __jsfl__ files to Adobe Flash Professional to execute. Flc is capable of writing status information to stdout and shutdowns with proper exit code which is important for automation scenarios.
+Flc is a command line compiler for FLA files based on Adobe Flash Professional. It is usefull when you need to drive Adobe Flash Professional on Continious Integration server. Under the hood it supplies set of jsfl files to Adobe Flash Professional to execute. Flc is capable of writing status information to stdout and shutdowns with proper exit code which is important for automation scenarios.
 
 ## How to install
 
@@ -39,7 +39,7 @@ flc --help
 
 ## Continious Integration
 
-As __flc__ drives UI of Adobe Flash Professional it is really important that no unexpected dialogs show up in the middle of compilation process. __jsfl__ scripting capabilities are very limited so you should take responsibility to configure Adobe Flash Professional accordingly.
+As __flc__ drives UI of Adobe Flash Professional it is really important that no unexpected dialogs show up in the middle of compilation process. jsfl scripting capabilities are very limited so you should take responsibility to configure Adobe Flash Professional accordingly.
 
 It might be challenging because certain Continious Integration servers execute tasks under Session 0 Desktop, which means that UI of Adobe Flash Professional is not visible by default so you can't see whats going in with it in the middle of compilation process. In order to see it, make sure that:
 
